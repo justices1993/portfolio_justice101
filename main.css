@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100&family=Hina+Mincho&family=Indie+Flower&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100&family=Hina+Mincho&family=Indie+Flower&family=Lobster&family=Roboto:wght@100;300&display=swap');
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*Navigation Design*/
+
+nav ul{
+    background-color: rgba(30,40,45,0.4);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    height: 10vh;
+    padding: 10px 15px;
+    position: fixed;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 10px 15px;
+}
+li a{
+    text-decoration: none;
+    font-family: 'Hina Mincho', serif;
+    font-size: 14px;
+    border-radius: 20%;
+    border: 1px solid black;
+    color: rgba(255,255,255,0.8);
+    padding: 8px;
+    font-size: 15px;
+}
+a:focus{
+    background-color: whitesmoke;
+    color: black;
+}
+
+label{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 10vh;
+    padding: 10px 15px; 
+    font-family: cursive;
+    font-size: 18px;  
+}
+label:focus{
+    color:whitesmoke;
+}
+
+/*hero settings*/
+.hero{
+    box-sizing: border-box;
+    width: 100%;
+    height: 70vh;
+    background-color: #e2e3e8;
+}
+.hero h2{
+    text-align:center;
+    padding-bottom: 11px;
+    padding-top: 150px;
+    font-family: 'Lobster', cursive;
+}
+
+.hero p{
+    text-align:center;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+.hero a{
+    border-radius: 12%;
+    background-color: rgba(37, 37, 35, 0.4);
+    border: 1px solid black;
+    color: rgba(74,89,90,0.8);
+    padding: 8px;
+    text-decoration: none;
+}
+.hero span{
+    color: black;
+    font-size: 25px;
+}
+/* article settings*/
+article{
+    width: 100%;
+    height: 99vh;
+    text-align: center;
+    overflow: hidden;
+
+}
+article h2{
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Lobster', cursive;
+}
+article p{
+    text-align: center;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+article a{
+    border-radius: 12%;
+    background-color: rgba(77, 66, 45, 0.4);
+    border: 1px solid black;
+    color: rgba(74,89,90,0.8);
+    padding: 14px;
+    text-decoration: none;
+}
+article ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+a i{
+    margin-top: 1em;
+    font-size: 25px;
+    color: steelblue;
+}
+article img{
+    width: 250px;
+    border-radius: 50%;
+}
+
+/*section settings*/
+section {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50vh;
+}
+section h2{
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Lobster', cursive;
+}
+
+section p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+#skill li{
+    border-bottom: 3px solid steelblue;
+    padding: 10px;
+    font-family: 'Lobster', cursive;
+    margin-left: 2em;
+    padding-top: 1em;
+}
+
+#skill .skill-1{
+    border-bottom: 2px solid green;
+    width: 8%;
+}
+#skill .skill-2{
+    border-bottom: 2px solid steelblue;
+    width: 8%;
+}
+#skill .skill-3{
+    border-bottom: 2px solid black;
+    width: 8%;
+}
+#skill .skill-4{
+    border-bottom: 2px solid darkcyan;
+    width: 8%;
+}
+#skill .skill-5{
+    border-bottom: 2px solid cyan;
+    width: 8%;
+}
+#skill .skill-6{
+    border-bottom: 2px solid magenta;
+    width: 8%;
+}
+#skill .skill-7{
+    border-bottom: 2px solid maroon;
+    width: 8%;
+}
+#skill .skill-8{
+    border-bottom: 2px solid black;
+    width: 11%;
+}
+
+
+/*footer settings*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    border: none;
+    background-color: aliceblue;
+}
+footer h2{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+footer p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#icon{
+    color: black;
+}
+
+label{
+    color: steelblue;
+}
+
+/*media queries*/
+
+@media (max-width: 960px) {
+    /* For a screen < 960px, this CSS will be read */
+    .container {
+      width: 100%;
+    }
+  }
+  @media (max-width: 720px) {
+    /* For a screen < 720px, this CSS will be read */
+    body {
+      width: 100%;
+    }
+  }
+  @media (max-width: 540px) {
+    /* For a screen < 540px, this CSS will be read */
+    body {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 300px) {
+    /* For a screen < 540px, this CSS will be read */
+    .container {
+      width: 100%;
+      height: fit-content;
+    }
+    #skill{
+        margin-top: 40em;
+        width: fit-content;
+    }
+  }
+  @media (max-width: 150px) {
+    /* For a screen < 150px, this CSS will be read */
+    body {
+      width: 100%;
+      height: 100vh;
+      margin-bottom: 1em;
+    }
+    code{
+        width: 50%;
+        height: 100vh;
+        padding-left: 1em;
+        
+    }
+  }
+
+  @media (max-width: 100px) {
+    /* For a screen < 150px, this CSS will be read */
+    body {
+      width: 100%;
+      height: 100vh;
+      margin-bottom: 1em;
+    }
+    footer{
+        width: 100%;
+        height: 100vh;
+        padding-left: 1em;
+        
+    }
+  }
+  @media (max-width: 60px) {
+    /* For a screen < 150px, this CSS will be read */
+    body {
+      width: 100%;
+      height: 100vh;
+      margin-bottom: 1em;
+      background-color: rgba(172,166,157,0.4);
+    }
+
+    @media (max-width: 60px) {
+        /* For a screen < 150px, this CSS will be read */
+        body {
+          width: 100%;
+          height: 100vh;
+          margin-bottom: 1em;
+          background-color: rgba(172,166,157,0.4);
+        }
+        @media (max-width: 40px) {
+            /* For a screen < 150px, this CSS will be read */
+            body {
+              width: 100%;
+              height: 100vh;
+              margin-bottom: 1em;
+              background-color: rgba(172,166,157,0.4);
+            }
+  /*javascript */
+
+.coder{
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 2%;
+}
+
+#owner{
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.activate{
+    color: black;
+    font-weight: 900;
+    font-size: 15px;
+    transition: 0.25s ease;
+}
+.activate:hover{
+    color: teal;
+    transition: 0.25s ease;
+}
+
+.head{
+    background-color: rgb(42, 39, 43);
+    color: white;
+    opacity: 0.4;
+}
